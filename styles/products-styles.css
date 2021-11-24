@@ -1,0 +1,68 @@
+main.products {
+    background: rgb(10, 186, 238);
+    background: linear-gradient(
+      180deg,
+      rgba(10, 186, 238, 1) 0%,
+      rgba(36, 56, 133, 1) 100%
+    );
+}
+
+.container.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.breadcrum{
+    background-color:#ea4c7d;
+    display:none;
+    z-index: 1000;
+}
+
+.breadcrum p{
+    background-color:#ea4c7d ;
+    color: white;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 105px;
+    margin: 0;
+}
+
+
+.cards {
+    background: linear-gradient(180deg, rgba(36, 56, 133, 1) 20%, rgba(10, 186, 238, 1) 80%);
+    width: 507px;
+    height: 470px;
+    border-radius: 8px;
+    box-shadow: 0 4px 4px rgba(0,0,0,0.2);
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+    transition: all 0.25s;
+}
+
+.cards:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgba(0,0,0,0.2);
+}
+
+.cards img {
+    width: 507;
+    height: 239;
+}
+
+.cards h4 {
+    color: white;
+}
+
+.cards p {
+    padding: 0 1rem;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.cards a {
+    text-decoration: none;
+    color: black;
+}

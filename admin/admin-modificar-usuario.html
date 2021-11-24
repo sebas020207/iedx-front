@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Admin - IEDX</title>
+    <link rel="stylesheet" href="./css/admin.css" />
+    <link rel="stylesheet" href="./css/header-admin.css"/>
+    <link rel="stylesheet" href="./css/admin-home.css"/>
+    <link rel="stylesheet" href="./css/admin-add-user.css"/>
+  </head>
+  <body>
+    <main>
+
+      <header class="header-admin">
+        <div class="logo">
+          <div class="logo-inner">
+            EDX
+          </div>
+        </div>
+        <div class="title-container">
+          <h2>Usuarios</h2>
+        </div>
+      </header>
+
+      <aside class="sidebar">
+        <ul>
+          <li>
+            <a href="admin.html">Inicio</a>
+          </li>
+          <li>
+            <a href="admin-ver-productos.html">Productos</a>
+            <a href="admin-ver-productos.html">Ver productos</a>
+            <a href="admin-agregar-producto.html">Agregar producto</a>
+          </li>
+          <li>
+            <a href="admin-ver-usuarios.html">Usuarios</a>
+            <a href="admin-ver-usuarios.html">Ver usuarios</a>
+            <a href="admin-agregar-usuario.html">Agregar usuario</a>
+          </li>
+          <li>
+            <a href="admin-cotizaciones.html">Cotizaciones</a>
+          </li>
+          <li>
+            <a href="admin-historial.html">Historial</a>
+          </li>
+        </ul>
+      </aside>
+
+      <section class="admin-content">
+        <div class="breadcrum">
+          <a href="admin.html">Inicio</a>
+          <p>></p>
+          <a href="admin-ver-usuarios.html">Usuarios</a>
+          <p>></p>
+          <a href="admin-modificar-usuario.html">Modificar usuario</a>
+          </div>
+
+        <h1>Modificar usuario</h1>
+        <br>
+        <hr size="5" color="gray" >
+        <form action="/something-important-that-i-have-not-implemented-yet" method="post">
+          <section class="form-left">
+            <div class="input">
+              <label for="names">Nombres:</label>
+              <input type="text" name="names" id="names" value="Nombre actual" required>
+            </div>
+            <div class="input">
+              <label for="names">Apellidos:</label>
+              <input type="text" name="surnames" id="surnames" value="Apellido actual" required>
+            </div>
+            <div class="input">
+              <label for="address">Dirección:</label>
+              <textarea name="address" id="address" placeholder="Dirección actual" rows="5" required></textarea>
+            </div>
+            <div class="input">
+              <label for="phone">Número telefónico:</label>
+              <input type="tel" name="phone" id="phone" value="Teléfono actual" required>
+            </div>
+            <div class="input">
+              <label for="email">E-mail:</label>
+              <input type="email" name="email" id="email" value="emailActual@iedx.com" required>
+            </div>
+            <div class="input">
+              <label for="role">Rol:</label>
+              <input type="radio" name="role" id="role1" value="role1">
+              <label for="role1">Rol 1</label>
+              <input type="radio" name="role" id="role2" value="role2" checked>
+              <label for="role2">Rol 2</label>
+            </div>
+            <hr>
+            <div class="input">
+              <label for="password">Contraseña actual:</label>
+              <input type="password" name="password" id="password" value="**********" required>
+            </div>
+            <div class="input">
+                <label for="password">Nueva contraseña:</label>
+                <input type="password" name="password" id="password" placeholder="**********" required>
+              </div>
+            <div class="input">
+              <label for="confirm-password">Confirmar nueva contraseña:</label>
+              <input type="password" name="confirm-password" id="confirm-password" placeholder="**********" required>
+            </div>
+          </section>
+          <section class="form-right">
+            <p class="info">Imágen de perfil</p>
+            <img class="profile-pic" src="../imagenes/default-profile-pic.png" alt="Profile picture">
+            <p class="info">Vista previa</p>
+            <label for="select-image" class="input-file">Cambiar imágen</label>
+            <input type="file" name="select-image" id="select-image" value="Seleccionar imágen">
+          </section>
+          <section class="submit">
+            <div class="input">
+              <input type="submit" name="submit" id="sumbit" value="Guardar Cambios">
+            </div>
+          </section>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>

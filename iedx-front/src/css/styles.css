@@ -1,0 +1,201 @@
+* {
+  box-sizing: border-box;
+}
+
+.mainindex.menu {
+  background: rgb(10, 186, 238);
+  background: linear-gradient(
+    180deg,
+    rgba(10, 186, 238, 1) 0%,
+    rgba(36, 56, 133, 1) 100%
+  );
+  padding-bottom: 50px;
+  padding-top: 0px;
+  position: relative;
+}
+
+body {
+  margin: 0px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 1.2 rem;
+  line-height: 1.6em;
+}
+
+p {
+  margin: 1em 0.5em 1em 0.5em;
+}
+
+.contenedor {
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
+
+.centrado {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.4374124649859944) 0%
+  );
+}
+
+.centrado p {
+  font-size: 50px;
+  color: white;
+  font-weight: bold;
+}
+
+.centrado #maquinaria {
+  font-size: 25px;
+}
+
+#debajo {
+  padding-top: 150px;
+  padding-bottom: 150px;
+}
+
+#debajo .contenedor p {
+  font-size: 50px;
+  color: white;
+  font-weight: bold;
+}
+#debajo .contenedor p:last-child {
+  font-size: 25px;
+}
+
+.container {
+  width: 85%;
+  max-width: 850 px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.header {
+  background-color: #ea4c7d;
+  padding: 2rem 0;
+}
+.header p {
+  color: white;
+}
+#contacto {
+  padding-right: 215px; /*con este controlos el movimiento del div de contacto*/
+}
+
+
+.logo-nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /*ajusta los bloques a la misma altura*/
+}
+
+.van {
+  padding: 8px; /*controla el ancho de la caja gris que contiene a la barra de navegacion*/
+}
+
+.nav {
+  margin: auto;
+  padding: 0px;
+  list-style: none;
+  text-align: center;
+  background-color: #e0e0e0;
+}
+
+.nav li a {
+  display: block;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 50px; /*este y el de abajo controlan la separacion entre las opciones del nav*/
+  padding-right: 50px;
+  transition: all 0.6s linear; /*tiempo de transicion*/
+  border-radius: 5px;
+  color: black;
+  text-decoration: none;
+}
+
+.nav li {
+  display: inline-block;
+  text-align: center;
+}
+.nav li a:hover {
+  background-color: #ea4c7d;
+  color: white;
+}
+
+.breadcrum {
+  background-color: #ea4c7d;
+  display: none;
+  z-index: 1000;
+}
+
+#breadcrum.show {
+  -webkit-animation: in 700ms ease both;
+  animation: in 700ms ease both;
+}
+
+#breadcrum.hide {
+  -webkit-animation: out 700ms ease both;
+  animation: out 700ms ease both;
+}
+.breadcrum p {
+  background-color: #ea4c7d;
+  color: white;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 105px;
+  margin: 0;
+}
+
+.boton-main-content {
+  padding-top: 70px;
+}
+.boton_2 {
+  text-decoration: none;
+  padding: 30px;
+  text-transform: uppercase;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-weight: 800;
+  font-size: 25px;
+  color: black;
+  background-color: #ea4c7d;
+}
+.boton_2:hover {
+  color: rgb(61, 61, 61);
+  background-color: #e66f94;
+  text-decoration: none;
+}
+
+.footer {
+  background: black;
+  color: white;
+  padding: 1.5rem 0;
+}
+
+.footer a {
+  color: white;
+}
+
+.logo-foot-container {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+#imagen {
+  padding-left: 5px; /*estos separan el contenido de los divs en n px se una en el footer*/
+}
+
+#linea {
+  padding-left: 25px;
+}
+#aviso {
+  padding-left: 355px;
+}
+#redsocial {
+  padding-left: 355px;
+}

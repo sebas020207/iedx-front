@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Admin - IEDX</title>
+    <link rel="stylesheet" href="./css/admin.css" />
+    <link rel="stylesheet" href="./css/header-admin.css" />
+    <link rel="stylesheet" href="./css/table.css" />
+    <script src="https://kit.fontawesome.com/519b79bde7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/more-options.css" />
+    <link rel="stylesheet" href="./css/admin-cotizaciones.css">
+  </head>
+  <body>
+    <main>
+      <header class="header-admin">
+        <div class="logo">
+          <div class="logo-inner">EDX</div>
+        </div>
+        <div class="title-container">
+          <h2>Cotizaciones</h2>
+        </div>
+      </header>
+
+      <aside class="sidebar">
+        <ul>
+          <li>
+            <a href="admin.html">Inicio</a>
+          </li>
+          <li>
+            <a href="admin-ver-productos.html">Productos</a>
+            <a href="admin-ver-productos.html">Ver productos</a>
+            <a href="admin-agregar-producto.html">Agregar producto</a>
+          </li>
+          <li>
+            <a href="admin-ver-usuarios.html">Usuarios</a>
+            <a href="admin-ver-usuarios.html">Ver usuarios</a>
+            <a href="admin-agregar-usuario.html">Agregar usuario</a>
+          </li>
+          <li>
+            <a href="admin-cotizaciones.html">Cotizaciones</a>
+          </li>
+          <li>
+            <a href="admin-historial.html">Historial</a>
+          </li>
+        </ul>
+      </aside>
+
+        <section class="admin-content">
+            <div class="breadcrum">
+                <a href="admin.html">Inicio</a>
+                <p>></p>
+                <a href="admin-cotizaciones.html">Cotizaciones</a>
+            </div>
+            <div>
+            <div>
+                <div class="space-between" style="margin: 1rem 0rem 1rem 0rem;">
+                    <h1>Cotizaciones</h1>
+                    <p class="relleno">&nbsp;&nbsp&nbsp;&nbsp</p>
+                    <p class="relleno">&nbsp;&nbsp&nbsp;&nbsp</p>
+                    <p class="relleno">&nbsp;&nbsp&nbsp;&nbsp</p>
+                    <p class="relleno">&nbsp;&nbsp&nbsp;&nbsp</p>
+                    <p class="relleno">&nbsp;&nbsp&nbsp;&nbsp</p>
+                    <h2 class="filtro">Prioridad</h2>
+                    <h2 class="filtro">Fecha</h2>
+                    <h2 id="actual">Todos</h2>
+                </div>
+
+                <hr size="5" color="gray" >
+                <div class="space-between" style="margin: 1rem 0rem 1rem 0rem;">
+                        
+                </div>
+                <div class="sup-table">
+                        <p>Mostrando 5 resultados</p>
+                        
+                        <div class="search-table">
+                            <i class="fas fa-search"></i>
+                            <input type="text" placeholder="Buscar por nombre" required>
+                        </div>
+                </div>
+                <br>
+                <table>
+                <thead>
+                    <tr>
+                    <th>Nombre</th>
+                    <th>Correo</th>
+                    <th>Teléfono</th>
+                    <th>Fecha</th>
+                    <th>...</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="PA">Usuario1</td>
+                        <td class="PA">user1@gmail.com</td>
+                        <td class="PA">222 224 2555</td>
+                        <td class="PA">DD/MM/AA</td>
+                        <td class="PA"><a class="VM" href="admin-detalles-cotizacion.html">Ver Más...</a></td>
+                    </tr>
+                    <tr>
+                        <td class="PB">Usuario2</td>
+                        <td class="PB">user2@gmail.com</td>
+                        <td class="PB">221 134 2456</td>
+                        <td class="PB">DD/MM/AA</td>
+                        <td class="PB"><a class="VM" href="admin-detalles-cotizacion.html">Ver Más...</a></td>
+                    </tr>
+                    <tr>
+                        <td class="PM">Usuario3</td>
+                        <td class="PM">user3@gmail.com</td>
+                        <td class="PM">222 244 2457</td>
+                        <td class="PM">DD/MM/AA</td>
+                        <td class="PM"><a class="VM" href="admin-detalles-cotizacion.html">Ver Más...</a></td>
+                    </tr>
+                    <tr>
+                        <td class="PM">Usuario4</td>
+                        <td class="PM">user4@gmail.com</td>
+                        <td class="PM">221 164 2458</td>
+                        <td class="PM">DD/MM/AA</td>
+                        <td class="PM"><a class="VM" href="admin-detalles-cotizacion.html">Ver Más...</a></td>
+                    </tr>
+                    <tr>
+                        <td class="PA">Usuario5</td>
+                        <td class="PA">user5@gmail.com</td>
+                        <td class="PA">222 284 2459</td>
+                        <td class="PA">DD/MM/AA</td>
+                        <td class="PA"><a class="VM" href="admin-detalles-cotizacion.html">Ver Más...</a></td>
+                    </tr>
+                </tbody>
+                </table>
+                <div>
+                    <br><br>
+                    <hr size="5" color="gray">
+                    <br>
+                    <div class="space-between" style="margin: 0rem 0rem 0rem 0rem;">
+                        <p class="relleno">&nbsp;&nbsp&nbsp;&nbsp</p>
+                        <p class="relleno">&nbsp;&nbsp&nbsp;&nbsp</p>
+                        <p class="relleno">&nbsp;&nbsp&nbsp;&nbsp</p>
+                        <p class="relleno">&nbsp;&nbsp&nbsp;&nbsp</p>
+                        <p class="relleno">&nbsp;&nbsp&nbsp;&nbsp</p>
+                        <p class="relleno">&nbsp;&nbsp&nbsp;&nbsp</p>
+                        <p class="relleno">&nbsp;&nbsp&nbsp;&nbsp</p>
+                        <p class="relleno">&nbsp;&nbsp&nbsp;&nbsp</p>
+                        <p class="relleno">&nbsp;&nbsp&nbsp;&nbsp</p>
+                        <p class="relleno">&nbsp;&nbsp&nbsp;&nbsp</p>
+                        <p class="relleno">&nbsp;&nbsp&nbsp;&nbsp</p>
+                        <p class="relleno">&nbsp;&nbsp&nbsp;&nbsp</p>
+                        <p class="relleno">&nbsp;&nbsp&nbsp;&nbsp</p>
+                        <p id="colorB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+                        <p> Prioridad Baja</p>
+                        <p id="colorM">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+                        <p> Prioridad Media</p>
+                        <p id="colorA">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+                        <p> Prioridad Alta</p>
+                        
+                    </div>
+                    <br>
+                </div>
+            </div>
+        </section>
+    </main>
+  </body>
+</html>

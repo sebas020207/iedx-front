@@ -1,0 +1,117 @@
+*{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#top_div {
+    background-image: url('../imagenes/envase-de-vidrio-incandescente.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    text-align: center;
+    background-position-x: center;
+    background-position-y: center;
+    height: 100vh;
+    padding: 30px 100px;
+}
+
+#bottom_div {
+    background: rgb(10, 186, 238);
+    background: linear-gradient( 180deg, rgba(10, 186, 238, 1) 0%, rgba(36, 56, 133, 1) 100%);
+    text-align: center;
+    padding: 30px 70px;
+}
+
+div.halves {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    height: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    color: white;
+    font-weight: bold;
+}
+
+div.row_flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.row_flex h2 {
+    width: 350px;
+    height: 50px;
+}
+
+.text_box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    height: auto;
+    width: 250px;
+    margin: 30px 60px;
+}
+#linea{
+    padding-left: 25px;
+}
+
+.text_box p,
+li {
+    text-align: justify;
+    font-weight: lighter;
+}
+
+.breadcrum{
+    background-color:#ea4c7d;
+    display:none;
+    z-index: 1000;
+}
+
+.breadcrum p{
+    background-color:#ea4c7d ;
+    color: white;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 105px;
+    margin: 0;
+}
+
+
+.slider{
+    width: 95%;
+    margin: auto;
+    overflow: hidden;
+}
+.slider ul {
+    display: flex;
+    padding: 0;
+    width: 300%;
+    animation: cambio 20s infinite alternate ;
+}
+
+.slider li {
+    width: 100%;
+    list-style: none;
+}
+
+.slider section{
+    width: 100%;
+}
+
+.slider li section h2{
+   margin-left: 40%;
+}
+
+.slider li section p{
+    font-size: 20px;
+ }
+@keyframes cambio{
+    0% {margin-left: 0;}
+    40% {margin-left: 0;}
+    45% {margin-left: -100%;}
+    65% {margin-left: -100%;}
+    70% {margin-left: -200%;}
+    100% {margin-left: -200%;}
+}

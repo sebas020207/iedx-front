@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Admin - IEDX</title>
+    <link rel="stylesheet" href="./css/admin.css" />
+    <link rel="stylesheet" href="./css/header-admin.css"/>
+    <link rel="stylesheet" href="./css/admin-home.css"/>
+    <link rel="stylesheet" href="./css/admin-add-product.css"/>
+    <script src="https://kit.fontawesome.com/519b79bde7.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <main>
+
+      <header class="header-admin">
+        <div class="logo">
+          <div class="logo-inner">
+            EDX
+          </div>
+        </div>
+        <div class="title-container">
+          <h2>Productos</h2>
+        </div>
+      </header>
+
+      <aside class="sidebar">
+        <ul>
+          <li>
+            <a href="admin.html">Inicio</a>
+          </li>
+          <li>
+            <a href="admin-ver-productos.html">Productos</a>
+            <a href="admin-ver-productos.html">Ver productos</a>
+            <a href="admin-agregar-producto.html">Agregar producto</a>
+          </li>
+          <li>
+            <a href="admin-ver-usuarios.html">Usuarios</a>
+            <a href="admin-ver-usuarios.html">Ver usuarios</a>
+            <a href="admin-agregar-usuario.html">Agregar usuario</a>
+            
+          </li>
+          <li>
+            <a href="admin-cotizaciones.html">Cotizaciones</a>
+          </li>
+          <li>
+            <a href="admin-historial.html">Historial</a>
+          </li>
+        </ul>
+      </aside>
+
+      <section class="admin-content">
+        <div class="breadcrum">
+            <a href="admin.html">Inicio</a>
+            <p>></p>
+            <a href="admin-ver-productos.html">Productos</a>
+            <p>></p>
+            <a href="admin-modificar-producto.html">Modificar producto</a>
+        </div>
+        <div>
+        <h1>Modificar producto</h1>
+        <br>
+        <hr size="5" color="gray" >
+        <form action="/something-important-that-i-have-not-implemented-yet" method="post">
+          <section class="form-left">
+            <div class="input">
+              <label for="name-product">Nombre:</label>
+              <input type="text" name="names" id="names" value="Nombre actual del producto" required>
+            </div>
+            <div class="input">
+              <label for="descripcion">Descripción:</label>
+              <input type="text" name="description" id="description" value="Descripción actual de producto" required>
+            </div>
+            <div id="entrada-principal">
+            <div class="entrada">
+            <p>Proveedor</p>
+            <i class="fas fa-briefcase"></i>
+            <select name="proveedor" id= "proveedor">
+                <optgroup label="Proveedor"> 
+                    <option value="A">MAVSA</option>
+                    <option value="B">MenE</option>
+                  </optgroup>
+            </select>
+            </div>
+            <div class="entrada">
+              <p>Categoría</p>
+              <i class="fas fa-briefcase"></i>
+              <select name="Categoria" id= "Categoria">
+                  <optgroup label="Categoria"> 
+                      <option value="A">Maquinaria y refacciones</option>
+                      <option value="B">Manejo</option>
+                      <option value="C">Lubricantes</option>
+                    </optgroup>
+              </select>
+            </div>
+              <div class="entrada">
+                <p>Subategoria</p>
+                <i class="fas fa-briefcase"></i>
+                <select name="area" id= "area">
+                    <optgroup label="Área"> 
+                        <option value="A">X</option>
+                        <option value="B">Y</option>
+                        <option value="C">Z</option>
+                      </optgroup>
+                </select>
+               </div>
+          </div>
+
+          </section>
+          <section class="form-right">
+            <p class="info">Imágen del producto</p>
+            <img class="product-pic" src="../imagenes/default-product-pic.jpg" alt="Profile picture" width="200px" height="200px">
+            <p class="info">Vista previa</p>
+            <label for="select-image" class="input-file">Cambiar imágen</label>
+            <input type="file" name="select-image" id="select-image" value="Seleccionar imágen">
+          </section>
+          <section class="submit">
+            <div class="input">
+              <input type="submit" name="submit" id="sumbit" value="Guardar Cambios">
+            </div>
+          </section>
+        </form>
+      </div>
+    </section>
+    </main>
+
+  </body>
+
+</html>

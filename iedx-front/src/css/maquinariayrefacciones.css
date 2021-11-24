@@ -1,0 +1,204 @@
+*{
+    box-sizing: border-box;
+  }
+  
+  .mainindex.men {
+    background-color: black;
+    display: block;
+  }
+  
+  body{
+      margin: 0px;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-size: 1.2 rem;
+      line-height: 1.6em;
+  }
+  
+  
+  .contenedor{
+    position: relative;
+    text-align: center;
+    width: 100%;
+    display: block;
+}
+
+  
+  .centrado{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      padding: 25px;
+      transform: translate(-50%, -50%);
+      background: rgb(0,0,0);
+      background: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.4374124649859944) 0%);
+
+  }
+  
+  
+  .centrado p{
+      font-size:40px;
+      color: white;
+      font-weight: bold;
+  }
+  
+  .centrado #maquinaria{
+      font-size:25px;
+      font-weight:normal;
+  }
+
+  .centrado a{
+    font-size:40px;
+    color: white;
+    font-weight: bold;
+    padding: 40px;
+}
+  
+  
+
+  
+  .container{
+     width: 85%;
+     max-width: 850 px;    
+     margin:0 auto  ; 
+     position:relative;
+  }
+  
+  .header{
+      background-color: #ea4c7d;
+      padding: 2rem 0;
+  }
+  .header p {
+     color: white;
+  }
+  #contacto{
+      padding-right: 215px; /*con este controlos el movimiento del div de contacto*/
+  }
+  
+
+  
+  
+  
+  
+  /*.breadcrum{
+      background-color:#ea4c7d} desbloquea para ver el breadcrum;*/
+  
+  .breadcrum p{
+      background-color:#ea4c7d ;
+      color: white;
+      padding-top: 0;
+      padding-bottom: 0;
+      padding-left: 105px;
+      margin: 0;
+  }
+  .logo-nav-container{
+      display: flex;      
+      justify-content:space-between;
+      align-items: center;  /*ajusta los bloques a la misma altura*/
+  }
+  
+  .van{
+      padding: 8px;   /*controla el ancho de la caja gris que contiene a la barra de navegacion*/
+  }
+  
+  .nav{
+  margin: auto;
+  padding: 0px;
+  list-style: none;
+  text-align: center;
+  background-color: #e0e0e0;
+  }
+  
+  .nav li a{
+      display: block;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      padding-left: 50px; /*este y el de abajo controlan la separacion entre las opciones del nav*/
+      padding-right: 50px;
+      transition: all 0.4s linear; /*tiempo de transicion*/
+      border-radius: 5px;
+      color:black;
+      text-decoration: none;
+  }
+  
+  .nav li{
+      display: inline-block;
+      text-align: center;
+  }
+  .nav  li a:hover{
+      background-color: #ea4c7d;
+      color: white;
+  }
+  
+  
+  .boton_2{
+      text-decoration: none;
+      padding: 30px;
+      text-transform: uppercase;
+      padding-left: 10px;
+      padding-right: 10px;
+      font-weight: 800;
+      font-size: 25px;
+      color: black;
+      background-color: #ea4c7d;
+    }
+    .boton_2:hover{
+      color: rgb(61, 61, 61) ;
+      background-color: #e66f94;;
+      text-decoration: none;
+    }
+  
+  
+  
+  .footer{
+      background: black;
+      color: white;
+      padding: 1.0rem 0;
+    
+  }
+  
+  .footer a{
+     color: white;
+  }
+  
+  .logo-foot-container{
+      display: flex;
+      justify-content:left;
+      align-items:center;
+  }
+  
+  #imagen{
+      padding-left: 5px;      /*estos separan el contenido de los divs en n px se una en el footer*/ 
+  }
+  
+  #linea{
+      padding-left: 25px;
+  }
+  #aviso{
+      padding-left: 355px;
+  
+  }
+  #redsocial{
+      padding-left: 355px;
+  }
+  
+  
+  .breadcrum{
+    background-color:#ea4c7d;
+    display:none;
+    z-index: 1000;
+}
+
+.breadcrum p{
+    background-color:#ea4c7d ;
+    color: white;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 105px;
+    margin: 0;
+}
+
+  
+  
+  
+  
+  

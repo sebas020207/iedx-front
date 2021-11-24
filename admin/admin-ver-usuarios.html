@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Admin - IEDX</title>
+    <link rel="stylesheet" href="./css/admin.css" />
+    <link rel="stylesheet" href="./css/header-admin.css" />
+    <link rel="stylesheet" href="./css/table.css" />
+    <link rel="stylesheet" href="./css/select.css" />
+    <script src="https://kit.fontawesome.com/519b79bde7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/more-options.css" />
+  </head>
+  <body>
+    <main>
+      <header class="header-admin">
+        <div class="logo">
+          <div class="logo-inner">EDX</div>
+        </div>
+        <div class="title-container">
+          <h2>Usuarios</h2>
+        </div>
+      </header>
+
+      <aside class="sidebar">
+        <ul>
+          <li>
+            <a href="admin.html">Inicio</a>
+          </li>
+          <li>
+            <a href="admin-ver-productos.html">Productos</a>
+            <a href="admin-ver-productos.html">Ver productos</a>
+            <a href="admin-agregar-producto.html">Agregar producto</a>
+          </li>
+          <li>
+            <a href="admin-ver-usuarios.html">Usuarios</a>
+            <a href="admin-ver-usuarios.html">Ver usuarios</a>
+            <a href="admin-agregar-usuario.html">Agregar usuario</a>
+          </li>
+          <li>
+            <a href="admin-cotizaciones.html">Cotizaciones</a>
+          </li>
+          <li>
+            <a href="admin-historial.html">Historial</a>
+          </li>
+        </ul>
+      </aside>
+
+      <section class="admin-content">
+        <div class="breadcrum">
+          <a href="admin.html">Inicio</a>
+          <p>></p>
+          <a href="">Usuarios</a>
+          <p>></p>
+          <a href="admin-ver-usuarios.html">Ver usuarios</a>
+          </div>
+          <div>
+        <div>
+            <h1>Ver usuarios</h1>
+            <br>
+            <hr size="5" color="gray" >
+            <div class="space-between" style="margin: 2rem 0rem 3rem 0rem;">
+
+                    <div id="sup">
+                      <table >
+                        <thead>
+                          <tr>
+                            <th>Usuarios</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>25</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                     </div>
+
+
+                     <select id="product-status" name="product-status">
+                      <option value="active">A-Z</option>
+                      <option value="inactive">Z-A</option>
+                    </select>
+            </div>
+              <div class="sup-table">
+                      <p>Mostrando 2 resultados</p>
+              
+                        <div class="search-table">
+                        <i class="fas fa-search"></i>
+                        <input type="text" placeholder="Buscar usuario" required>
+                      </div>
+                
+              </div>
+              <br>
+            <table>
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>Nombre</th>
+                  <th>Correo</th>
+                  <th>Teléfono</th>
+                  <th>Rol</th>
+                  <th>Acción</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>Usuario1</td>
+                  <td>user1@gmail.com</td>
+                  <td>222 224 2555</td>
+                  <td>Supersaiyayin</td>
+                  <td>
+                    <div class="dropdown">
+                        <button class="dropbtn"></button>
+                        <div class="dropdown-content">
+                            <a href="admin-modificar-usuario.html">Modificar Usuario</a>
+                            <a href="#">Eliminar Usuario</a>
+                        </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>Usuario2</td>
+                  <td>user1@gmail.com</td>
+                  <td>222 224 2455</td>
+                  <td>Supersaiyayin</td>
+                  <td>
+                    <div class="dropdown">
+                        <button class="dropbtn"></button>
+                        <div class="dropdown-content">
+                            <a href="admin-modificar-usuario.html">Modificar Usuario</a>
+                            <a href="#">Eliminar Usuario</a>
+                        </div>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+      </div>
+      </section>
+    </main>
+  </body>
+</html>

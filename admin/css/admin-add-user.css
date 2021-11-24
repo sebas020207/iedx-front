@@ -1,0 +1,94 @@
+.breadcrum{
+    padding: 5px 0px 35px 0px;
+  }
+  .breadcrum p{
+    display: inline-block;
+    font-size: 13px;
+  }
+  
+  .breadcrum a{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 13px;
+  }
+  
+
+
+div.input{
+    margin: 18px;
+}
+
+label, p{
+    font-size: 20px;
+}
+
+div.input input#role1:checked~label[for="role1"]{
+    font-weight: bold;
+}
+
+div.input input#role2:checked~label[for="role2"]{
+    font-weight: bold;
+}
+
+section.form-left{
+    width: 58%;
+    float: left;
+}
+
+/* section.form-left input, section.form-left textarea{
+    width: 100%;
+} */
+
+section.form-left input[type="text"],
+section.form-left input[type="password"],
+section.form-left input[type="email"],
+section.form-left input[type="tel"],
+section.form-left textarea{
+    width: 100%;
+}
+
+section.form-left input#address{
+    height: 5em;
+}
+
+section.form-left textarea{
+    resize: none;
+}
+
+section.form-right{
+    width: 42%;
+    float: right;
+    text-align: center;
+}
+
+section.form-right p{
+    margin: 10px;
+}
+
+section.submit{
+    clear: both;
+    text-align: center;
+}
+
+section.submit div.input input{
+    margin: 30px;
+}
+
+input[type="file"]{
+    display: none;
+}
+
+label.input-file, input[type="submit"]{
+    font-size: 20px;
+    color: white;
+    height: 40px;
+    width: 200px;
+    background: linear-gradient(#eeeeee,#3d3d3d);
+    border: 0px;
+}
+
+label.input-file{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 30px;
+    padding-left: 30px;
+}

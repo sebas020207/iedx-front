@@ -1,0 +1,168 @@
+
+/*Configuración general, sección de Filtros*/
+.Filtros {
+    background: #e0e0e0;
+    width: 20%;
+    height: 100vh;
+
+}
+
+/*Configuración general, sección de Tabla*/
+.Tabla {
+    background: #f1f1f1;
+    padding-left: 02%;
+    width: 100%;
+    height: 100vh;
+}
+
+.contenidoDeTabla {
+    overflow-y: scroll;
+    width: 100%;
+    height: 90%;
+}
+
+.contenidoDeTabla th{
+    padding: 0;
+    margin: 0;
+}
+
+.contenidoDeTabla H2:first-child{
+    color: white;
+}
+
+
+
+/*Configuración de tabla */
+table {
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+thead tr th { 
+    position: sticky;
+    top: 0;
+}
+
+th {
+    border: 1px solid #ea4c7d;
+    background: #ea4c7d;
+    font-size: larger;
+    padding: 20px;
+    width: 30px;
+    word-wrap: break-word;
+    
+}
+
+td {
+    border: 1px solid black;
+    font-size: larger;
+    padding: 20px;
+    word-wrap: break-word;
+    
+}
+
+/*Estilo para la opción de Agregar a Hoja de Cotización*/
+.agregar {
+    text-align: center;
+    border-style: double;
+    border-radius: 10px 10px 10px 10px;
+    font-size: small;
+    text-decoration: underline;
+}
+
+/*Se utilizó otra Div para el área de los checkbox solo porque
+    si se aplicaban los filtros a todo,los títulos se ven mal :p
+*/
+.opciones {
+    padding: 0 10px;
+}
+
+/*Selector de Ordenar por...*/
+.orden {
+    padding: 2% 3% 1.7% 3%;
+    text-align: right;
+    background-color:#e0e0e0;
+}
+
+
+
+
+#pantalla-dividida {
+    display: flex;
+}
+
+/*Estilo para los Titulos en el área de Filtros*/
+#molderia {
+    padding: 1px;
+    background: white;
+    text-align: center;
+}
+
+/*Estilo para los Titulos en el área de Filtros*/
+#filtros {
+    padding: 3px;
+    background: #ea4c7d;
+    text-align: center;
+    color: white;
+}
+
+#hoja {
+    font-size: smaller;
+    padding: 1% 16.5%;
+    text-align: right;
+    background: #e0e0e0;
+    text-decoration: underline;
+    
+}
+
+#hoja h4 {
+   margin: 0;
+    
+}
+
+
+#between{
+    background-color: #ea4c7d;
+    width: 100%;
+    height: 8px;
+}
+
+#ubicacion {
+    font-size: smaller;
+    padding: 1px 15px;
+    text-align: left;
+    background: #f1f1f1;
+}
+
+
+/*Estilo para los Zeldas*/
+a {
+    color: black;
+}
+
+a:hover {
+    color: #ea4c7d;
+}
+.breadcrum{
+    background-color:#ea4c7d;
+    display:none;
+    z-index: 1000;
+}
+
+.breadcrum p{
+    background-color:#ea4c7d ;
+    color: white;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 105px;
+    margin: 0;
+}
+
+.barra hr{
+    padding: 0;
+    margin: 0;
+}
+
+.main{
+    background-color:#f1f1f1;;
+}

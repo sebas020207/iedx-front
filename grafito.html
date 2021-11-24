@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scape=1" />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="styles/catalogo-styles.css" />
+    <script src="https://kit.fontawesome.com/519b79bde7.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>IEDX MÉXICO - Cotizaciones - Manejo_envases - Grafito</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container logo-nav-container">
+          <img src="imagenes/edx logo.png" alt="logo_edx" width="250px" />
+  
+          <div id="contacto" />
+          <p>Contacto directo +52 (556)-425-​4434</p>
+        </div>
+        <div class="buscar">
+          <div id="in">
+              <input type="text" placeholder="Buscar" required>
+          </div>
+          <div class="btn">
+              <i class="fas fa-search"></i>
+          </div>
+       </div>
+    </header>
+    <nav id="main-nav">
+      <ul class="nav" >
+        <div class="van"></div>
+        <li id="init">
+            <a href="index.html">Inicio</a>
+        </li>
+
+        <li id="we">
+            <a href="nosotros.html">Nosotros</a>
+        </li>
+        <li id="products">
+            <a href="productos.html">Productos</a>
+        </li>
+        <li id="quotes">
+            <a href="cotizaciones.html">Cotizaciones</a>
+        </li>
+        <li id="contact">
+            <a href="contacto.html">Contacto</a>
+        </li>
+        <li id="partners">
+            <a href="socios.html">Socios</a>
+        </li>
+    </ul>
+        <div class="breadcrum" id="breadcrum">
+            <p id="text-breadcrum">Inicio</p>
+        </div>   
+    </nav>
+
+    <main class="main catalogo">
+      <div id="between"><br></div>
+        <div id="hoja">
+            <h4><img src="imagenes/hojacot.jpg" alt="Nos encontro la imagen" width="41" height="24"><a href="hoja_cotizacion.html">Hoja de Cotización(0)</a></h4>
+          </div>
+        <div id="ubicacion">
+            <!-- span permite modificar los elementos que se encuentra dentro sin afectar a lo demás -->
+            <h4><span>Usted se encuentra en:</span> <a href="cotizaciones.html">Cotizaciones</a> > <a href="manejodeenvases.html">Manejo_envases</a>> <a href="grafito.html">Grafito</a></h4>
+        </div>
+        <!--Para poder colocar los filtros de un lado y la tabla del otro, hize esto que vi en un video XD
+            se "divide la pantalla en 2, el div de "Filtros" y el de "Tabla", dándole a cada uno la
+            proporción que queramos
+        --> <div class="barra" > <hr width="%100" size="3" color="#616161"> <!--El size controla la altura de la linea--></div>
+       
+        <section id="pantalla-dividida">
+          <!--Parte de la IZQUIERDA (Fitros)-->
+            <div class="Filtros">
+                <div id=molderia>
+                    <h1>Grafito</h1>
+                </div>
+                <div id="filtros" style=" box-shadow: 4px 5px 4px rgba(0,0,0,0.2);">
+                    <h2>Filtros</h2>
+                </div>
+                <div class="opciones">
+                    <!-- Se usan los corchetes para hacerlo como un arreglo y sea más fácil
+                        identificar cuál ha sido seleccionado ya cuando se utilice el Javascript
+                    -->
+                    <div>
+                        <label for="empresa[]"><h3>EMPRESA</h3></label>
+                        <input type="checkbox" name="empresa[]" id="MAVSA"> MAVSA<br>
+                        <input type="checkbox" name="empresa[]" id="MenE"> MenE
+                    </div>
+                    <div>
+                        <label for="categoria[]"><h3>SUBCATEGORIA</h3></label>
+                      <!--  <input type="checkbox" name="categoria[]" id="FEEDERS"> FEEDERS MECÁNICOS Y SERVO FEEDERS<br>
+                        <input type="checkbox" name="categoria[]" id="MOLDES"> MOLDES DE PRENSADO<br>
+                        <input type="checkbox" name="categoria[]" id="ACCESORIOS"> ACCESORIOS - REFACCIONES<br>
+                        <input type="checkbox" name="categoria[]" id="MAQUINAS"> MÁQUINAS DE PRENSADO<br>
+                        <input type="checkbox" name="categoria[]" id="STACKERS"> STACKERS<br>
+                        <input type="checkbox" name="categoria[]" id="IS"> MÁQUINAS IS<br>
+                        <input type="checkbox" name="categoria[]" id="FIRE"> FIREPOLISHERS<br>
+                        <input type="checkbox" name="categoria[]" id="FORE"> FOREHEARTS<br>-->
+                    </div>
+                </div>
+            </div>
+          <!--Parte de la DERECHA (Tabla)-->
+            <div class="Tabla">
+            
+                <div class="orden">
+                    <label for="orden">Ordenar por:</label>
+                    <select name="orden" id="orden">
+                        <option value="1">A-Z</option>
+                        <option value="2">Z-A</option>
+                    </select>
+                </div>
+                <div class=contenidoDeTabla>
+                    <table style="width: 100%; height: 100%;">
+                        <thead style=" box-shadow: 4px 4px 4px rgba(0,0,0,0.2);">
+                            <tr>
+                                <th colspan="3"><h2 style="text-align: left; padding-left: 10%;" >Productos</h2></th>
+                            
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <img src="imagenes/envases.jpg" width="300" height="175" alt="No se Encontró la Imágen">
+                                </td>
+                                <td>
+                                    <h4>Producto 1</h4>
+                                    <p style="font-size: small;">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing eli Aliquam orci lectus, malesuada nec posuere nec, tempor et lectus. Phasellus nunc nibh, hendrerit id commodo et, vehicula efficitur dui.
+                                    </p>
+                                </td>
+                                <td>
+                                  <a href="#">
+                                    <div class="agregar">
+                                      <p><img src="imagenes/hojacot.jpg" alt="Nos encontro la imagen" width="71" height="34">
+                                        <br>Agregar a Hoja de Cotización
+                                      </p>
+                                    </div>
+                                  </a>
+                                </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                  <img src="imagenes/envases.jpg" width="300" height="175" alt="No se Encontró la Imágen">
+                              </td>
+                              <td>
+                                  <h4>Producto 2</h4>
+                                  <p style="font-size: small;">
+                                      Lorem ipsum dolor sit amet, consectetur adipiscing eli Aliquam orci lectus, malesuada nec posuere nec, tempor et lectus. Phasellus nunc nibh, hendrerit id commodo et, vehicula efficitur dui.
+                                  </p>
+                              </td>
+                              <td>
+                                <a href="#">
+                                  <div class="agregar">
+                                    <p><img src="imagenes/hojacot.jpg" alt="Nos encontro la imagen" width="71" height="34">
+                                      <br>Agregar a Hoja de Cotización
+                                    </p>
+                                  </div>
+                                </a>
+                              </td>
+                          </tr>
+                          <tr>
+                            <td>
+                                <img src="imagenes/envases.jpg" width="300" height="175" alt="No se Encontró la Imágen">
+                            </td>
+                            <td>
+                                <h4>Producto 3</h4>
+                                <p style="font-size: small;">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing eli Aliquam orci lectus, malesuada nec posuere nec, tempor et lectus. Phasellus nunc nibh, hendrerit id commodo et, vehicula efficitur dui.
+                                </p>
+                            </td>
+                            <td>
+                              <a href="#">
+                                <div class="agregar">
+                                  <p><img src="imagenes/hojacot.jpg" alt="Nos encontro la imagen" width="71" height="34">
+                                    <br>Agregar a Hoja de Cotización
+                                  </p>
+                                </div>
+                              </a>
+                            </td>
+                        </tr>
+                        <tr>
+                          <td>
+                              <img src="imagenes/envases.jpg" width="300" height="175" alt="No se Encontró la Imágen">
+                          </td>
+                          <td>
+                              <h4>Producto 4</h4>
+                              <p style="font-size: small;">
+                                  Lorem ipsum dolor sit amet, consectetur adipiscing eli Aliquam orci lectus, malesuada nec posuere nec, tempor et lectus. Phasellus nunc nibh, hendrerit id commodo et, vehicula efficitur dui.
+                              </p>
+                          </td>
+                          <td>
+                            <a href="#">
+                              <div class="agregar">
+                                <p><img src="imagenes/hojacot.jpg" alt="Nos encontro la imagen" width="71" height="34">
+                                  <br>Agregar a Hoja de Cotización
+                                </p>
+                              </div>
+                            </a>
+                          </td>
+                      </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+        <div>
+          <br>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container logo-foot-container">
+          <div id="imagen">
+            <img
+              src="imagenes/EDX logo circle.png"
+              alt="logo_edx"
+              width="125px"
+            />
+          </div>
+          <div id="linea">
+            <hr width="1" size="120"> <!--El size controla la altura de la linea-->
+        </div>
+          <div id="aviso">
+            <a href="aviso.html">Aviso de privacidad</a>
+          </div>
+          <div id="redsocial">
+            <img src="imagenes/pngwing.com.png" alt="logo_edx" width="50px" />
+          </div>
+        </div>
+      </footer>
+      <script src="index_script.js" type="text/javascript"></script>
+      <script src="scripts/molderia.js"></script>
+  </body>
+</html>

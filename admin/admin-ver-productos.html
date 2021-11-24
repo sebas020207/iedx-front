@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Admin - IEDX</title>
+    <link rel="stylesheet" href="./css/admin.css" />
+    <link rel="stylesheet" href="./css/header-admin.css" />
+    <link rel="stylesheet" href="./css/table.css" />
+    <script src="https://kit.fontawesome.com/519b79bde7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/select.css" />
+    <link rel="stylesheet" href="./css/more-options.css" />
+  </head>
+  <body>
+    <main>
+      <header class="header-admin">
+        <div class="logo">
+          <div class="logo-inner">EDX</div>
+        </div>
+        <div class="title-container">
+          <h2>Productos</h2>
+        </div>
+      </header>
+
+      <aside class="sidebar">
+        <ul>
+          <li>
+            <a href="admin.html">Inicio</a>
+          </li>
+          <li>
+            <a href="admin-ver-productos.html">Productos</a>
+            <a href="admin-ver-productos.html">Ver productos</a>
+            <a href="admin-agregar-producto.html">Agregar producto</a>
+          </li>
+          <li>
+            <a href="admin-ver-usuarios.html">Usuarios</a>
+            <a href="admin-ver-usuarios.html">Ver usuarios</a>
+            <a href="admin-agregar-usuario.html">Agregar usuario</a>
+          </li>
+          <li>
+            <a href="admin-cotizaciones.html">Cotizaciones</a>
+          </li>
+          <li>
+            <a href="admin-historial.html">Historial</a>
+          </li>
+        </ul>
+      </aside>
+
+      <section class="admin-content">
+        <div class="breadcrum">
+          <a href="admin.html">Inicio</a>
+          <p>></p>
+          <a href="">Productos</a>
+          <p>></p>
+          <a href="admin-ver-productos.html">Ver productos</a>
+          </div>
+          <div>
+        <h1>Ver productos</h1>
+        <br>
+        <hr size="5" color="gray" >
+        <div class="space-between" style="margin: 2rem 0rem 3rem 0rem;">
+          <div id="sup">
+              <table >
+                <thead>
+                  <tr>
+                    <th>Activos</th>
+                    <th>Archivados</th>
+                    <th>Categoria</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>25</td>
+                    <td>5</td>
+                    <td>2</td>
+                  </tr>
+                </tbody>
+              </table>
+        </div>
+          <select id="product-status" name="product-status">
+            <option value="active">Activos</option>
+            <option value="inactive">Archivados</option>
+          </select>
+        </div>
+            <div class="sup-table">
+                            <p>Mostrando 30 resultados</p>
+                    
+                              <div class="search-table">
+                              <i class="fas fa-search"></i>
+                              <input type="text" placeholder="Buscar producto" required>
+                            </div>
+                       
+          </div>
+          <br>
+        <table>
+          <thead>
+            <tr>
+              <th>Nombre</th>
+              <th>Descripción</th>
+              <th>Acción</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Producto1</td>
+              <td>Descripción Producto1</td>
+              <td>
+                <div class="dropdown">
+                  <button class="dropbtn"></button>
+                  <div class="dropdown-content">
+                      <a href="admin-modificar-producto.html">Modificar Producto</a>
+                      <a href="#">Eliminar Producto</a>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>Producto1</td>
+              <td>Descripción Producto1</td>
+              <td>
+                <div class="dropdown">
+                  <button class="dropbtn"></button>
+                  <div class="dropdown-content">
+                      <a href="admin-modificar-producto.html">Modificar Producto</a>
+                      <a href="#">Eliminar Producto</a>
+                  </div>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      </section>
+    
+    </main>
+  </body>
+</html>
